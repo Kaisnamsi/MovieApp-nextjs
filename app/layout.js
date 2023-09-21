@@ -1,4 +1,3 @@
-// Import any necessary dependencies
 import { useClient } from 'react-server-components';
 import Head from 'next/head';
 
@@ -36,6 +35,8 @@ export function Layout({ children }) {
         <p>&copy; {new Date().getFullYear()} Pcari Movie App</p>
         {/* Additional footer content */}
       </footer>
+      {/* Example of wrapping styled-jsx with "use client" */}
+      {useClient()}
       <style jsx global>{`
         /* Global CSS styles go here */
         body {
